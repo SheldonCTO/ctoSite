@@ -1,0 +1,137 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.recording{
+  display: table-row;
+}
+
+.custom-dropdown  {
+  
+  
+  color: #ffffff;
+  border: none;
+  position: relative;
+  font-family: Arial;
+  width:auto;
+
+}
+
+
+
+.custom-dropdown .dropdown-menu {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+}
+
+.custom-dropdown .dropdown-item {
+  color: #ffffff;
+  padding: 8px 20px;
+  
+  user-select: none;
+}
+
+.custom-dropdown .dropdown-item:hover, 
+.custom-dropdown .dropdown-item.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-dropdown .dropdown-menu {
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically */
+  gap: 4px; /* Adds space between dropdown items */
+}
+
+.custom-dropdown .dropdown-item {
+  text-align: left; /* Aligns text to the left (optional) */
+}
+
+.record-container{
+	max-width: 1200px; /* Set maximum width of the container */
+  height: auto;
+  margin: 5% auto; /* Center the container horizontally with 15% top margin */
+  padding: 15px; /* Add padding inside the container */
+  background-color: #f5f5f5; /* Set background color to light gray */
+  border-radius: 4px;
+  display: flex;
+  color: black;
+  flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+  gap: 10px;
+    
+}
+
+.record-card{
+  
+  
+  flex: 1 1 calc(33.333% - 16px); /* Makes each card take up 1/3 of the row minus the gap */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  border: 1px solid #ccc; /* Optional: Adds a border for styling */
+  padding: 10px; /* Optional: Adds some padding */
+  background-color: #fff;
+  color: black;
+  align-items: center; /* Vertically centers the content */
+  text-align: center; /* Ensures text aligns centrally */
+}
+
+.coaching-container{
+  display: flex;
+}
+.coaching-intro{
+  margin-left: 30px;
+  line-height: 2;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.aboutMe{
+  margin-top: 110px;
+  width: 400px;
+}
+.title-container{
+  color: black;
+  display: flex;
+  align-items: center
+}
